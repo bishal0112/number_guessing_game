@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+body {
+	font-size: 20px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background-color: rgb(12, 10, 10);
+	color: #eee;
+}
+header {
+	position: relative;
+	border-bottom: 5px solid #eee;
+	height: 35vh;
+}
+.display {
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	background-color: #eee;
+	color: black;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%, 50%);
+	display: flex;
+	font-size: 100px;
+	justify-content: center;
+	align-items: center;
+}
+h1 {
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 2%;
+}
+.between {
+	position: absolute;
+	right: 1em;
+	top: 1em;
+}
+.again {
+	margin-left: 10px;
+	margin-top: 1rem;
+	width: 20%;
+	height: 15%;
+	cursor: pointer;
+	font-size: 1.3rem;
+	border-radius: 5px;
+}
+.again:hover {
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+
+/* main */
+main {
+	height: 65vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 2rem;
+}
+.left {
+	display: flex;
+	flex-direction: column;
+}
+#guess-number {
+	height: 60px;
+	border: none;
+	border-radius: 5px;
+	/* background: none; */
+	text-align: center;
+	font-size: 3rem;
+	width: 15rem;
+	/* padding: 2.5rem;
+	width: 12rem;
+	display: block; */
+}
+#guess-number:active {
+	border: none;
+}
+#submit-btn {
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	border-radius: 4px;
+	width: 10rem;
+	margin: 20px auto;
+}
+#submit-btn:hover {
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+.win {
+	background: rgb(53, 170, 53);
+}
